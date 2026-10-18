@@ -20,3 +20,6 @@ O **ConectaPesquisa** é uma aplicação web desenvolvida para centralizar e div
 * **Sprint 1:** Concepção estrutural, wireframes de baixa fidelidade e levantamento de requisitos. (Concluído)
 * **Sprint 2:** Criação dos arquivos HTML e estilização de todas as telas utilizando Tailwind CSS. (A iniciar)
 * **Sprint 3:** Adição de scripts em JavaScript para simular filtros, abrir modais e validar o formulário de contato. (A iniciar)
+
+
+(O Felipe não entrou no git ainda por que eu esqueci de fazer antes , mas ele ajudou a fazer a parte do documento do projeto, elaborar a ideia, etc.)
