@@ -6,32 +6,34 @@
     <title>ConectaPesquisa</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-fundo text-escuro">
+<body class="bg-fundo text-escuro min-h-screen flex flex-col">
     <!--navbar-->
     <header>
-        <div class="flex border-b-2 border-cinza p-4">
-            <div class="flex-1">
-                <a href="index.html" class="font-bold text-xl">ConectaPesquisa</a>
-            </div>
-            <div>
-                <a href="aluno.html" class="border-2 border-cinza p-2 m-2">Sou aluno</a>
-                <a href="orientador.html" class="bg-escuro text-white p-2 m-2">Sou orientador</a>
+        <div class="border-b-2 border-cinza p-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="flex-1">
+                    <a href="index.html" class="font-bold text-xl">ConectaPesquisa</a>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <a href="aluno.html" class="border-2 border-cinza p-2 ml-2">Sou aluno</a>
+                    <a href="orientador.html" class="bg-escuro text-white p-2 ml-2">Sou orientador</a>
+                </div>
             </div>
         </div>
     </header>
 
     <!--titulo/barra de pesquisa, parte mais clara-->
-    <main>
+    <main class="flex-1">
         <!--titulo-->
-        <div class="text-center p-10">
+        <div class="text-center p-10 max-w-5xl mx-auto">
             <p class="text-gray-600">Pesquisa começa com conexão</p>
             <h1 class="text-4xl font-bold m-4">Encontre um projeto. <br> Comece a investigar.</h1>
-            <p class="text-gray-600 mb-6">O ponto de encontro entre estudantes curiosos e professores que estão transformando perguntas em conhecimento.</p>
+            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">O ponto de encontro entre estudantes curiosos e professores que estão transformando perguntas em conhecimento.</p>
 
             <!--pesquisa-->
-            <div class="border-2 border-cinza bg-white p-4">
-                <input type="text" placeholder="Busque por tema, área ou universidade" class="w-full border-2 border-cinza p-2 mb-2">
-                <button class="w-full bg-escuro text-white p-2">Buscar oportunidades</button>
+            <div class="border-2 border-cinza bg-white p-6">
+                <input type="text" placeholder="Busque por tema, área ou universidade" class="w-full border-2 border-cinza p-4 mb-4 text-lg">
+                <button class="w-full bg-escuro text-white p-4 text-lg">Buscar oportunidades</button>
             </div>
 
             <p class="text-gray-600 mt-4">Projetos de todo o Brasil</p>
@@ -40,34 +42,39 @@
 
         <!--vagas-->
         <div class="bg-cinzaclaro p-10">
-            <h2 class="text-2xl font-bold">Oportunidades recentes</h2>
-            <a href="#" class="underline">Explorar todas</a>
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold">Oportunidades recentes</h2>
+                <a href="#" class="underline">Explorar todas</a>
 
-            <div class="bg-white border-2 border-cinza p-4 mt-4">
-                <p class="text-sm text-gray-600">TECNOLOGIA - Inscrições até 18 jun</p>
-                <h3 class="text-lg font-bold">Inteligência artificial aplicada à saúde pública</h3>
-                <p>Profa. Dra. Marina Costa</p>
-                <p class="text-sm text-gray-600">Universidade Federal de Minas Gerais</p>
-                <p class="text-sm mt-2">Remunerada</p>
-                <a href="#" class="font-bold">Ver detalhes</a>
-            </div>
+                <!--cards em colunas-->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                    <div class="bg-white border-2 border-cinza p-4">
+                        <p class="text-sm text-gray-600">TECNOLOGIA - Inscrições até 18 jun</p>
+                        <h3 class="text-lg font-bold">Computação em nuvem com AWS</h3>
+                        <p>Prof. Fabricio Herpich</p>
+                        <p class="text-sm text-gray-600">UFFS - Campus Chapecó</p>
+                        <p class="text-sm mt-2">Remunerada</p>
+                        <a href="#" class="font-bold">Ver detalhes</a>
+                    </div>
 
-            <div class="bg-white border-2 border-cinza p-4 mt-4">
-                <p class="text-sm text-gray-600">CIÊNCIAS HUMANAS - Inscrições até 24 jun</p>
-                <h3 class="text-lg font-bold">Mapeamento de narrativas urbanas contemporâneas</h3>
-                <p>Prof. Dr. Rafael Almeida</p>
-                <p class="text-sm text-gray-600">Universidade de São Paulo</p>
-                <p class="text-sm mt-2">Voluntária</p>
-                <a href="#" class="font-bold">Ver detalhes</a>
-            </div>
+                    <div class="bg-white border-2 border-cinza p-4">
+                        <p class="text-sm text-gray-600">CIÊNCIAS AGRÁRIAS - Inscrições até 24 jun</p>
+                        <h3 class="text-lg font-bold">Agricultura familiar no oeste catarinense</h3>
+                        <p>Profa. Dra. Ana Paula Schneider</p>
+                        <p class="text-sm text-gray-600">UFFS - Campus Laranjeiras do Sul</p>
+                        <p class="text-sm mt-2">Voluntária</p>
+                        <a href="#" class="font-bold">Ver detalhes</a>
+                    </div>
 
-            <div class="bg-white border-2 border-cinza p-4 mt-4">
-                <p class="text-sm text-gray-600">CIÊNCIAS BIOLÓGICAS - Inscrições até 30 jun</p>
-                <h3 class="text-lg font-bold">Biodiversidade e conservação em áreas costeiras</h3>
-                <p>Profa. Dra. Beatriz Nunes</p>
-                <p class="text-sm text-gray-600">Universidade Federal de Santa Catarina</p>
-                <p class="text-sm mt-2">Remunerada</p>
-                <a href="#" class="font-bold">Ver detalhes</a>
+                    <div class="bg-white border-2 border-cinza p-4">
+                        <p class="text-sm text-gray-600">SAÚDE - Inscrições até 30 jun</p>
+                        <h3 class="text-lg font-bold">Saúde mental de estudantes universitários</h3>
+                        <p>Prof. Dr. Lucas Bortolini</p>
+                        <p class="text-sm text-gray-600">UFFS - Campus Passo Fundo</p>
+                        <p class="text-sm mt-2">Remunerada</p>
+                        <a href="#" class="font-bold">Ver detalhes</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
