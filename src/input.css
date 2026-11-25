@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+    --color-fundo: #f5f5f0; /*fundo da pagina*/
+    --color-escuro: #222222; /*botoes e textos*/
+    --color-cinza: #cccccc; /*bordas*/
+    --color-cinzaclaro: #e8e8e3; /*fundo das oportunidades*/
+}
