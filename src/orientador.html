@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Orientador - ConectaPesquisa</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-fundo">
+    <!--navbar-->
+    <header>
+        <div class="flex border-b-2 border-cinza p-4">
+            <div class="flex-1">
+                <a href="index.html" class="font-bold text-xl">ConectaPesquisa</a>
+            </div>
+            <div>
+                <a href="aluno.html" class="border-2 border-cinza p-2 m-2">Sou aluno</a>
+                <a href="orientador.html" class="bg-escuro text-white p-2 m-2">Sou orientador</a>
+            </div>
+        </div>
+    </header>
+
+    <!--perfil do orientador-->
+    <main class="p-10">
+        <h1 class="text-4xl font-bold">Meu perfil</h1>
+        <p class="text-gray-600 mb-6">Preencha seus dados para os alunos conhecerem você e sua pesquisa.</p>
+
+        <!--dados pessoais-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Dados pessoais</h2>
+
+            <div class="flex">
+                <div class="bg-cinzaclaro border-2 border-cinza w-24 h-24 text-center text-gray-500 pt-8 mr-4">Foto</div>
+                <div class="flex-1">
+                    <p>Nome completo</p>
+                    <input type="text" placeholder="Seu nome" class="w-full border-2 border-cinza p-2 mb-2">
+
+                    <p>E-mail institucional</p>
+                    <input type="email" placeholder="voce@universidade.edu.br" class="w-full border-2 border-cinza p-2 mb-2">
+                </div>
+            </div>
+        </div>
+
+        <!--vinculo-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Vínculo</h2>
+
+            <p>Universidade</p>
+            <input type="text" placeholder="Ex: UFFS" class="w-full border-2 border-cinza p-2 mb-2">
+
+            <p>Departamento / Campus</p>
+            <input type="text" placeholder="Ex: Campus Chapecó" class="w-full border-2 border-cinza p-2 mb-2">
+
+            <p>Cargo</p>
+            <select class="w-full border-2 border-cinza p-2 mb-2">
+                <option>Professor</option>
+                <option>Pesquisador</option>
+                <option>Pós-doutorando</option>
+                <option>Outro</option>
+            </select>
+        </div>
+
+        <!--formacao-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Formação acadêmica</h2>
+
+            <p class="font-bold">Graduação</p>
+            <input type="text" placeholder="Curso - Instituição - Ano" class="w-full border-2 border-cinza p-2 mb-2">
+
+            <p class="font-bold">Mestrado</p>
+            <input type="text" placeholder="Curso - Instituição - Ano" class="w-full border-2 border-cinza p-2 mb-2">
+
+            <p class="font-bold">Doutorado</p>
+            <input type="text" placeholder="Curso - Instituição - Ano" class="w-full border-2 border-cinza p-2 mb-2">
+        </div>
+
+        <!--lattes-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Currículo Lattes</h2>
+
+            <p>Link do Lattes</p>
+            <input type="text" placeholder="http://lattes.cnpq.br/..." class="w-full border-2 border-cinza p-2 mb-2">
+        </div>
+
+        <!--linhas de pesquisa-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Linhas de pesquisa</h2>
+
+            <p><input type="checkbox"> Tecnologia</p>
+            <p><input type="checkbox"> Ciências Humanas</p>
+            <p><input type="checkbox"> Ciências Biológicas</p>
+            <p><input type="checkbox"> Engenharias</p>
+            <p><input type="checkbox"> Saúde</p>
+
+            <p class="mt-2">Outras</p>
+            <input type="text" placeholder="Ex: inteligência artificial, saúde pública..." class="w-full border-2 border-cinza p-2 mb-2">
+        </div>
+
+        <!--sobre-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Sobre mim</h2>
+
+            <textarea rows="4" placeholder="Conte um pouco sobre sua trajetória e sua pesquisa..." class="w-full border-2 border-cinza p-2"></textarea>
+        </div>
+
+        <!--projetos-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Projetos que oriento</h2>
+
+            <div class="border-b-2 border-cinza pb-2 mb-2">
+                <p class="font-bold">Inteligência artificial aplicada à saúde pública</p>
+                <p class="text-sm text-gray-500">Ativo - 18 interessados</p>
+                <a href="#" class="underline text-sm">Editar</a>
+            </div>
+
+            <div class="border-b-2 border-cinza pb-2 mb-2">
+                <p class="font-bold">Dados abertos e vigilância epidemiológica</p>
+                <p class="text-sm text-gray-500">Ativo - 7 interessados</p>
+                <a href="#" class="underline text-sm">Editar</a>
+            </div>
+
+            <div class="pb-2 mb-2">
+                <p class="font-bold">Laboratório de inovação em saúde</p>
+                <p class="text-sm text-gray-500">Rascunho - 0 interessados</p>
+                <a href="#" class="underline text-sm">Editar</a>
+            </div>
+
+            <button class="border-2 border-cinza p-2 mt-2">+ Cadastrar novo projeto</button>
+        </div>
+
+        <button class="w-full bg-escuro text-white p-2 mt-4">Salvar perfil</button>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="border-t-2 border-cinza p-4">
+            <p class="font-bold">ConectaPesquisa</p>
+            <p class="text-gray-500">Conectando pessoas que movem a ciência.</p>
+        </div>
+    </footer>
+</body>
+</html>
