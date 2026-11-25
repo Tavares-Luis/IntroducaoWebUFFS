@@ -1,25 +1,55 @@
 # ConectaPesquisa
 
-O **ConectaPesquisa** é uma aplicação web desenvolvida para centralizar e divulgar oportunidades de Iniciação Científica (IC) e projetos de pesquisa acadêmica. O sistema visa combater a fragmentação de informações nas universidades, facilitando a conexão entre estudantes e professores orientadores.
+O **ConectaPesquisa** é um protótipo de site para aproximar estudantes de oportunidades de Iniciação Científica e projetos acadêmicos. A proposta é centralizar a divulgação dessas oportunidades e facilitar o contato entre estudantes e professores orientadores.
 
-**ODS 4 - Educação de Qualidade:** O projeto atua diretamente na meta de aumentar o número de jovens com habilidades relevantes para o mercado e área de pesquisa, garantindo o acesso democrático à Iniciação Científica e auxiliando na retenção de alunos no ensino superior.
+## Entrega da Sprint 2
 
-## Tecnologias que vamos utilizar:
-* **Estruturação:** HTML
-* **Estilização:** CSS e Tailwind
-* **Interatividade:** JavaScript (Verificar se vamos ainda)
-* **Prototipação:** Figma
+Esta versão parcial apresenta páginas HTML semânticas, estilizadas com Tailwind CSS e conectadas por navegação entre páginas:
 
-## Funcionalidades e Telas
-* **Landing Page:** Apresentação do projeto e direcionamento de perfis (Aluno/Professor).
-* **Feed de Vagas:** Listagem estática de oportunidades de pesquisa.
-* **Filtros e Buscas:** Simulação de filtros (via JavaScript) por área de conhecimento e tipo de bolsa. (Se conseguimos)
-* **Contato Simplificado:** Formulário interativo para simular o envio de interesse ao professor. (Se conseguimos)
+- **Início (`index.html`):** apresentação do projeto e oportunidades em destaque.
+- **Oportunidades (`oportunidades.html`):** listagem de projetos com campos de busca e filtros demonstrativos.
+- **Contato (`contato.html`):** formulário demonstrativo de contato.
 
-## Cronograma
-* **Sprint 1:** Concepção estrutural, wireframes de baixa fidelidade e levantamento de requisitos. (Concluído)
-* **Sprint 2:** Criação dos arquivos HTML e estilização de todas as telas utilizando Tailwind CSS. (A iniciar)
-* **Sprint 3:** Adição de scripts em JavaScript para simular filtros, abrir modais e validar o formulário de contato. (A iniciar)
+Os links entre as páginas funcionam. A busca, os filtros e o envio do formulário ainda são apenas elementos visuais nesta etapa; a interatividade e a integração do formulário estão previstas para a Sprint 3.
 
+## Tecnologias
 
-(O Felipe não entrou no git ainda por que eu esqueci de fazer antes , mas ele ajudou a fazer a parte do documento do projeto, elaborar a ideia, etc.)
+- HTML5 semântico
+- Tailwind CSS v4
+- npm para compilar o CSS
+
+Não há JavaScript nesta entrega.
+
+## Identidade visual e paleta
+
+| Cor | Código | Uso |
+| --- | --- | --- |
+| Azul-marinho | `#0F172A` | Títulos, textos de destaque e botões |
+| Azul | `#1D4ED8` | Links, categorias e elementos de ênfase |
+| Cinza-escuro | `#475569` | Texto secundário |
+| Cinza-claro | `#E2E8F0` | Bordas e divisórias |
+| Branco | `#FFFFFF` | Fundo de cartões e áreas de conteúdo |
+| Fundo claro | `#F8FAFC` | Fundo geral das páginas |
+
+O azul e o azul-marinho reforçam confiança e conhecimento, associados à pesquisa acadêmica. Fundos claros e texto escuro mantêm a leitura confortável; o azul é reservado para destaques e links. As combinações foram escolhidas para manter contraste entre texto e fundo.
+
+## Executar localmente
+
+Instale as dependências e compile o CSS:
+
+```bash
+npm install
+npm run build
+```
+
+Depois, abra `index.html` no navegador ou inicie um servidor estático na raiz do projeto. Durante o desenvolvimento, use `npm run watch` para recompilar o CSS após alterações.
+
+## Próximas etapas
+
+- Implementar busca e filtros com JavaScript.
+- Conectar o formulário de contato a um serviço de envio.
+- Substituir os dados de exemplo por oportunidades reais.
+
+## Objetivo social
+
+O projeto relaciona-se ao **ODS 4 — Educação de Qualidade**, ao facilitar o acesso de estudantes a oportunidades de iniciação científica e pesquisa acadêmica.

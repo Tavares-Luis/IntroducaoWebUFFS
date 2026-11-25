@@ -1,15 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ConectaPesquisa</title>
-  <link rel="stylesheet" href="./src/output.css" />
+  <meta name="description" content="Encontre oportunidades de iniciação científica e conecte-se a projetos de pesquisa.">
+  <title>ConectaPesquisa | Início</title>
+  <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
+<body class="bg-slate-50 font-sans text-slate-900">
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-5 py-4">
+      <a href="./index.html" class="flex items-center gap-2 text-lg font-bold text-slate-900" aria-label="ConectaPesquisa - início">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-slate-700" aria-hidden="true">
+          <span class="h-2 w-2 rounded-full border border-slate-700"></span>
+        </span>
+        ConectaPesquisa
+      </a>
+      <nav class="flex flex-wrap gap-5 text-sm font-semibold" aria-label="Navegação principal">
+        <a href="./index.html" aria-current="page" class="text-blue-700">Início</a>
+        <a href="./oportunidades.html">Oportunidades</a>
+        <a href="./contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto flex min-h-[480px] max-w-5xl items-center justify-center px-5 py-16 text-center">
+        <div class="w-full max-w-3xl">
+          <p class="mb-7 text-xs font-bold tracking-[0.2em] text-blue-700">PESQUISA COMEÇA COM CONEXÃO</p>
+          <h1 class="text-6xl leading-tight font-bold tracking-tight">
+            Encontre um projeto.<span class="block text-slate-500">Comece a investigar.</span>
+          </h1>
+          <p class="mx-auto mt-6 max-w-xl text-base leading-7 text-slate-600">
+            Um espaço para aproximar estudantes curiosos de professores que transformam perguntas em conhecimento.
+          </p>
+          <a href="./oportunidades.html" class="mt-8 inline-block bg-slate-900 px-6 py-3 text-sm font-bold text-white">
+            Explorar oportunidades
+          </a>
+          <p class="mt-5 text-xs text-slate-500">Projetos de todo o Brasil · Novas oportunidades toda semana</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="recentes-heading">
+      <div class="mx-auto max-w-5xl px-5 py-14">
+        <div class="mb-7 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="mb-2 text-xs font-bold tracking-widest text-blue-700">01 · OPORTUNIDADES</p>
+            <h2 id="recentes-heading" class="text-3xl font-bold tracking-tight">Projetos em destaque</h2>
+          </div>
+          <a href="./oportunidades.html" class="border-b border-slate-900 pb-1 text-sm font-semibold">
+            Ver todas →
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-5">
+          <article class="border border-slate-200 bg-white p-5">
+            <p class="text-xs font-bold uppercase tracking-wide text-blue-700">Tecnologia · Remunerada</p>
+            <h3 class="mt-4 text-lg leading-snug font-bold">Inteligência artificial aplicada à saúde pública</h3>
+            <p class="mt-4 text-sm font-semibold">Profa. Dra. Marina Costa</p>
+            <p class="mt-1 text-xs text-slate-600">Universidade Federal de Minas Gerais</p>
+            <a href="./oportunidades.html" class="mt-5 inline-block text-sm font-bold text-blue-700">Conhecer projeto →</a>
+          </article>
+
+          <article class="border border-slate-200 bg-white p-5">
+            <p class="text-xs font-bold uppercase tracking-wide text-blue-700">Ciências Humanas · Voluntária</p>
+            <h3 class="mt-4 text-lg leading-snug font-bold">Mapeamento de narrativas urbanas contemporâneas</h3>
+            <p class="mt-4 text-sm font-semibold">Prof. Dr. Rafael Almeida</p>
+            <p class="mt-1 text-xs text-slate-600">Universidade de São Paulo</p>
+            <a href="./oportunidades.html" class="mt-5 inline-block text-sm font-bold text-blue-700">Conhecer projeto →</a>
+          </article>
+
+          <article class="border border-slate-200 bg-white p-5">
+            <p class="text-xs font-bold uppercase tracking-wide text-blue-700">Ciências Biológicas · Remunerada</p>
+            <h3 class="mt-4 text-lg leading-snug font-bold">Biodiversidade e conservação em áreas costeiras</h3>
+            <p class="mt-4 text-sm font-semibold">Profa. Dra. Beatriz Nunes</p>
+            <p class="mt-1 text-xs text-slate-600">Universidade Federal de Santa Catarina</p>
+            <a href="./oportunidades.html" class="mt-5 inline-block text-sm font-bold text-blue-700">Conhecer projeto →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-5xl flex-row items-center justify-between gap-3 px-5 py-7 text-sm text-slate-600">
+      <a href="./index.html" class="font-bold text-slate-900">ConectaPesquisa</a>
+      <p>Conectando pessoas que movem a ciência.</p>
+      <a href="./contato.html">Fale com a equipe</a>
+    </div>
+  </footer>
 </body>
 
 </html>

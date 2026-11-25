@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a equipe do ConectaPesquisa.">
+  <title>ConectaPesquisa | Contato</title>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-slate-50 font-sans text-slate-900">
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-5 py-4">
+      <a href="./index.html" class="flex items-center gap-2 text-lg font-bold text-slate-900" aria-label="ConectaPesquisa - início">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-slate-700" aria-hidden="true">
+          <span class="h-2 w-2 rounded-full border border-slate-700"></span>
+        </span>
+        ConectaPesquisa
+      </a>
+      <nav class="flex flex-wrap gap-5 text-sm font-semibold" aria-label="Navegação principal">
+        <a href="./index.html">Início</a>
+        <a href="./oportunidades.html">Oportunidades</a>
+        <a href="./contato.html" aria-current="page" class="text-blue-700">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-5 py-14">
+    <section class="border border-slate-200 bg-white p-10" aria-labelledby="contato-heading">
+      <p class="mb-3 text-xs font-bold tracking-[0.2em] text-blue-700">FALE CONOSCO</p>
+      <h1 id="contato-heading" class="text-4xl font-bold tracking-tight">Vamos conversar?</h1>
+      <p class="mt-3 leading-6 text-slate-600">
+        Tem dúvidas sobre uma oportunidade ou quer saber mais sobre a plataforma? Envie sua mensagem.
+      </p>
+
+      <form action="./contato.html" method="get" class="mt-8 grid gap-5">
+        <div>
+          <label for="nome" class="mb-2 block text-sm font-semibold">Nome</label>
+          <input id="nome" name="nome" type="text" required class="w-full border border-slate-300 px-3 py-3 outline-blue-700">
+        </div>
+        <div>
+          <label for="email" class="mb-2 block text-sm font-semibold">E-mail</label>
+          <input id="email" name="email" type="email" required class="w-full border border-slate-300 px-3 py-3 outline-blue-700">
+        </div>
+        <div>
+          <label for="assunto" class="mb-2 block text-sm font-semibold">Assunto</label>
+          <select id="assunto" name="assunto" class="w-full border border-slate-300 bg-white px-3 py-3 outline-blue-700">
+            <option>Dúvida sobre uma oportunidade</option>
+            <option>Quero divulgar um projeto</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensagem" class="mb-2 block text-sm font-semibold">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required class="w-full resize-y border border-slate-300 px-3 py-3 outline-blue-700"></textarea>
+        </div>
+        <button type="submit" class="justify-self-start bg-slate-900 px-6 py-3 text-sm font-bold text-white">
+          Enviar mensagem
+        </button>
+        <p class="text-xs leading-5 text-slate-500">
+          Formulário demonstrativo da Sprint 2. O envio de mensagens será conectado a um serviço na próxima etapa.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-5xl flex-row items-center justify-between gap-3 px-5 py-7 text-sm text-slate-600">
+      <a href="./index.html" class="font-bold text-slate-900">ConectaPesquisa</a>
+      <p>Conectando pessoas que movem a ciência.</p>
+      <a href="./oportunidades.html">Ver oportunidades</a>
+    </div>
+  </footer>
+</body>
+
+</html>
