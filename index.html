@@ -1,15 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ConectaPesquisa</title>
-  <link rel="stylesheet" href="./src/output.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaPesquisa</title>
+    <link rel="stylesheet" href="./src/output.css">
 </head>
+<body class="bg-fundo">
+    <!--navbar-->
+    <header>
+        <div class="flex border-b-2 border-cinza p-4">
+            <div class="flex-1">
+                <a href="#" class="font-bold text-xl">ConectaPesquisa</a>
+            </div>
+            <div>
+                <a href="#" class="border-2 border-cinza p-2 m-2">Sou aluno</a>
+                <a href="#" class="bg-escuro text-white p-2 m-2">Sou professor</a>
+            </div>
+        </div>
+    </header>
 
-<body>
+    <!--titulo/barra de pesquisa, parte mais clara-->
+    <main>
+        <!--titulo-->
+        <div class="text-center p-10">
+            <p class="text-gray-500">Pesquisa começa com conexão</p>
+            <h1 class="text-4xl font-bold m-4">Encontre um projeto. <br> Comece a investigar.</h1>
+            <p class="text-gray-600 mb-6">O ponto de encontro entre estudantes curiosos e professores que estão transformando perguntas em conhecimento.</p>
 
+            <!--pesquisa-->
+            <div class="border-2 border-cinza bg-white p-4">
+                <input type="text" placeholder="Busque por tema, área ou universidade" class="w-full border-2 border-cinza p-2 mb-2">
+                <button class="w-full bg-escuro text-white p-2">Buscar oportunidades</button>
+            </div>
+
+            <p class="text-gray-500 mt-4">Projetos de todo o Brasil</p>
+            <p class="text-gray-500">Novas oportunidades toda semana</p>
+        </div>
+
+        <!--vagas-->
+        <div class="bg-cinzaclaro p-10">
+            <h2 class="text-2xl font-bold">Oportunidades recentes</h2>
+            <a href="#" class="underline">Explorar todas</a>
+
+            <div class="bg-white border-2 border-cinza p-4 mt-4">
+                <p class="text-sm text-gray-500">TECNOLOGIA - Inscrições até 18 jun</p>
+                <h3 class="text-lg font-bold">Inteligência artificial aplicada à saúde pública</h3>
+                <p>Profa. Dra. Marina Costa</p>
+                <p class="text-sm text-gray-500">Universidade Federal de Minas Gerais</p>
+                <p class="text-sm mt-2">Remunerada</p>
+                <a href="#" class="font-bold">Ver detalhes</a>
+            </div>
+
+            <div class="bg-white border-2 border-cinza p-4 mt-4">
+                <p class="text-sm text-gray-500">CIÊNCIAS HUMANAS - Inscrições até 24 jun</p>
+                <h3 class="text-lg font-bold">Mapeamento de narrativas urbanas contemporâneas</h3>
+                <p>Prof. Dr. Rafael Almeida</p>
+                <p class="text-sm text-gray-500">Universidade de São Paulo</p>
+                <p class="text-sm mt-2">Voluntária</p>
+                <a href="#" class="font-bold">Ver detalhes</a>
+            </div>
+
+            <div class="bg-white border-2 border-cinza p-4 mt-4">
+                <p class="text-sm text-gray-500">CIÊNCIAS BIOLÓGICAS - Inscrições até 30 jun</p>
+                <h3 class="text-lg font-bold">Biodiversidade e conservação em áreas costeiras</h3>
+                <p>Profa. Dra. Beatriz Nunes</p>
+                <p class="text-sm text-gray-500">Universidade Federal de Santa Catarina</p>
+                <p class="text-sm mt-2">Remunerada</p>
+                <a href="#" class="font-bold">Ver detalhes</a>
+            </div>
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="border-t-2 border-cinza p-4">
+            <p class="font-bold">ConectaPesquisa</p>
+            <p class="text-gray-500">Conectando pessoas que movem a ciência.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
