@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Aluno - ConectaPesquisa</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-fundo">
+    <!--navbar-->
+    <header>
+        <div class="flex border-b-2 border-cinza p-4">
+            <div class="flex-1">
+                <a href="index.html" class="font-bold text-xl">ConectaPesquisa</a>
+            </div>
+            <div>
+                <a href="aluno.html" class="border-2 border-cinza bg-white p-2 m-2">Sou aluno</a>
+                <a href="orientador.html" class="bg-escuro text-white p-2 m-2">Sou orientador</a>
+            </div>
+        </div>
+    </header>
+
+    <!--perfil do aluno-->
+    <main class="p-10">
+        <h1 class="text-4xl font-bold">Meu perfil</h1>
+        <p class="text-gray-600 mb-6">Preencha seus dados para os orientadores conhecerem você.</p>
+
+        <!--dados pessoais-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Dados pessoais</h2>
+
+            <div class="flex">
+                <div class="bg-cinzaclaro border-2 border-cinza w-24 h-24 text-center text-gray-500 pt-8 mr-4">Foto</div>
+                <div class="flex-1">
+                    <p>Nome completo</p>
+                    <input type="text" placeholder="Seu nome" class="w-full border-2 border-cinza p-2 mb-2">
+
+                    <p>E-mail</p>
+                    <input type="email" placeholder="voce@email.com" class="w-full border-2 border-cinza p-2 mb-2">
+
+                    <p>Cidade</p>
+                    <input type="text" placeholder="Sua cidade" class="w-full border-2 border-cinza p-2 mb-2">
+                </div>
+            </div>
+        </div>
+
+        <!--onde estuda-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Onde estuda</h2>
+
+            <p>Universidade</p>
+            <input type="text" placeholder="Ex: UFFS" class="w-full border-2 border-cinza p-2 mb-2">
+
+            <p>Curso</p>
+            <input type="text" placeholder="Ex: Ciência da Computação" class="w-full border-2 border-cinza p-2 mb-2">
+
+            <p>Semestre</p>
+            <select class="w-full border-2 border-cinza p-2 mb-2">
+                <option>1º semestre</option>
+                <option>2º semestre</option>
+                <option>3º semestre</option>
+                <option>4º semestre</option>
+                <option>5º semestre</option>
+                <option>6º semestre</option>
+                <option>7º semestre</option>
+                <option>8º semestre ou mais</option>
+            </select>
+        </div>
+
+        <!--areas de interesse-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Áreas de interesse</h2>
+
+            <p><input type="checkbox"> Tecnologia</p>
+            <p><input type="checkbox"> Ciências Humanas</p>
+            <p><input type="checkbox"> Ciências Biológicas</p>
+            <p><input type="checkbox"> Engenharias</p>
+            <p><input type="checkbox"> Saúde</p>
+        </div>
+
+        <!--disponibilidade-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Disponibilidade</h2>
+
+            <p>Horas por semana</p>
+            <input type="number" placeholder="Ex: 12" class="w-full border-2 border-cinza p-2 mb-2">
+
+            <p>Tipo de bolsa</p>
+            <p><input type="radio" name="bolsa"> Somente remunerada</p>
+            <p><input type="radio" name="bolsa"> Remunerada ou voluntária</p>
+        </div>
+
+        <!--sobre mim-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Sobre mim</h2>
+
+            <textarea rows="4" placeholder="Conte um pouco sobre você e o que gostaria de pesquisar..." class="w-full border-2 border-cinza p-2"></textarea>
+        </div>
+
+        <!--experiencias-->
+        <div class="bg-white border-2 border-cinza p-4 mt-4">
+            <h2 class="text-2xl font-bold mb-4">Experiências</h2>
+
+            <p>Projetos e cursos que já fez</p>
+            <textarea rows="3" placeholder="Ex: monitoria, cursos online, projetos da faculdade..." class="w-full border-2 border-cinza p-2 mb-2"></textarea>
+
+            <p>GitHub ou LinkedIn</p>
+            <input type="text" placeholder="Link do seu perfil" class="w-full border-2 border-cinza p-2 mb-2">
+        </div>
+
+        <button class="w-full bg-escuro text-white p-2 mt-4">Salvar perfil</button>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="border-t-2 border-cinza p-4">
+            <p class="font-bold">ConectaPesquisa</p>
+            <p class="text-gray-500">Conectando pessoas que movem a ciência.</p>
+        </div>
+    </footer>
+</body>
+</html>
