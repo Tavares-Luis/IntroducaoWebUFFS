@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confira oportunidades de pesquisa disponíveis no ConectaPesquisa.">
+    <title>Oportunidades - ConectaPesquisa</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-fundo text-escuro">
+    <!--navbar-->
+    <header>
+        <div class="flex border-b-2 border-cinza p-4">
+            <div class="flex-1">
+                <a href="index.html" class="flex items-center gap-2 font-bold text-xl" aria-label="ConectaPesquisa - início">
+                    <span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-escuro" aria-hidden="true">
+                        <span class="h-2 w-2 rounded-full border border-escuro"></span>
+                    </span>
+                    ConectaPesquisa
+                </a>
+            </div>
+            <div>
+                <a href="aluno.html" class="border-2 border-cinza p-2 m-2">Sou aluno</a>
+                <a href="orientador.html" class="bg-escuro text-white p-2 m-2">Sou orientador</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="p-10">
+        <h1 class="text-4xl font-bold">Vagas e projetos</h1>
+        <p class="text-gray-600 mb-6">Encontre uma oportunidade que combine com sua curiosidade.</p>
+
+        <!--busca-->
+        <form action="oportunidades.html" method="get" class="bg-white border-2 border-cinza p-4 mb-6">
+            <label for="busca" class="block mb-2 font-bold">Buscar oportunidade</label>
+            <input id="busca" name="busca" type="search" placeholder="Busque por palavra-chave" class="w-full border-2 border-cinza p-2 mb-2">
+            <button type="submit" class="w-full bg-escuro text-white p-2">Buscar</button>
+        </form>
+
+        <div class="flex">
+            <!--filtros-->
+            <aside class="bg-white border-2 border-cinza p-4 mr-6 w-64" aria-labelledby="filtros-heading">
+                <h2 id="filtros-heading" class="text-xl font-bold mb-4">Filtros</h2>
+
+                <fieldset>
+                    <legend class="font-bold mb-2">Área de conhecimento</legend>
+                    <p><input type="checkbox" name="area" value="tecnologia" class="mr-2">Tecnologia</p>
+                    <p><input type="checkbox" name="area" value="humanas" class="mr-2">Ciências Humanas</p>
+                    <p><input type="checkbox" name="area" value="biologicas" class="mr-2">Ciências Biológicas</p>
+                    <p><input type="checkbox" name="area" value="engenharias" class="mr-2">Engenharias</p>
+                </fieldset>
+
+                <fieldset class="mt-4">
+                    <legend class="font-bold mb-2">Tipo de bolsa</legend>
+                    <p><input type="checkbox" name="bolsa" value="remunerada" class="mr-2">Remunerada</p>
+                    <p><input type="checkbox" name="bolsa" value="voluntaria" class="mr-2">Voluntária</p>
+                </fieldset>
+
+                <p class="text-sm text-gray-600 mt-4">
+                    Os filtros são demonstrativos nesta versão.
+                </p>
+            </aside>
+
+            <!--lista de oportunidades-->
+            <section class="flex-1" aria-label="Lista de oportunidades">
+                <p class="text-gray-600 mb-4"><strong class="text-escuro">4</strong> oportunidades encontradas</p>
+
+                <article class="bg-white border-2 border-cinza p-4 mb-4">
+                    <p class="text-sm text-gray-600">TECNOLOGIA - Inscrições até 18 jun</p>
+                    <h2 class="text-lg font-bold mt-2">Inteligência artificial aplicada à saúde pública</h2>
+                    <p class="mt-2">Profa. Dra. Marina Costa</p>
+                    <p class="text-sm text-gray-600">Universidade Federal de Minas Gerais</p>
+                    <p class="text-sm mt-2">Remunerada</p>
+                    <a href="aluno.html" class="font-bold mt-2 inline-block">Demonstrar interesse</a>
+                </article>
+
+                <article class="bg-white border-2 border-cinza p-4 mb-4">
+                    <p class="text-sm text-gray-600">CIÊNCIAS HUMANAS - Inscrições até 24 jun</p>
+                    <h2 class="text-lg font-bold mt-2">Mapeamento de narrativas urbanas contemporâneas</h2>
+                    <p class="mt-2">Prof. Dr. Rafael Almeida</p>
+                    <p class="text-sm text-gray-600">Universidade de São Paulo</p>
+                    <p class="text-sm mt-2">Voluntária</p>
+                    <a href="aluno.html" class="font-bold mt-2 inline-block">Demonstrar interesse</a>
+                </article>
+
+                <article class="bg-white border-2 border-cinza p-4 mb-4">
+                    <p class="text-sm text-gray-600">CIÊNCIAS BIOLÓGICAS - Inscrições até 30 jun</p>
+                    <h2 class="text-lg font-bold mt-2">Biodiversidade e conservação em áreas costeiras</h2>
+                    <p class="mt-2">Profa. Dra. Beatriz Nunes</p>
+                    <p class="text-sm text-gray-600">Universidade Federal de Santa Catarina</p>
+                    <p class="text-sm mt-2">Remunerada</p>
+                    <a href="aluno.html" class="font-bold mt-2 inline-block">Demonstrar interesse</a>
+                </article>
+
+                <article class="bg-white border-2 border-cinza p-4">
+                    <p class="text-sm text-gray-600">ENGENHARIAS - Inscrições até 5 jul</p>
+                    <h2 class="text-lg font-bold mt-2">Materiais sustentáveis para a construção civil</h2>
+                    <p class="mt-2">Prof. Dr. Lucas Andrade</p>
+                    <p class="text-sm text-gray-600">Universidade Estadual de Campinas</p>
+                    <p class="text-sm mt-2">Remunerada</p>
+                    <a href="aluno.html" class="font-bold mt-2 inline-block">Demonstrar interesse</a>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="border-t-2 border-cinza p-4">
+            <p class="font-bold">ConectaPesquisa</p>
+            <p class="text-gray-600">Conectando pessoas que movem a ciência.</p>
+        </div>
+    </footer>
+</body>
+</html>

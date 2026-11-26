@@ -8,10 +8,15 @@
 </head>
 <body class="bg-fundo text-escuro">
     <!--navbar-->
-    <header>
+ <header>
         <div class="flex border-b-2 border-cinza p-4">
             <div class="flex-1">
-                <a href="index.html" class="font-bold text-xl">ConectaPesquisa</a>
+                <a href="index.html" class="flex items-center gap-2 font-bold text-xl" aria-label="ConectaPesquisa - início">
+                    <span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-escuro" aria-hidden="true">
+                        <span class="h-2 w-2 rounded-full border border-escuro"></span>
+                    </span>
+                    ConectaPesquisa
+                </a>
             </div>
             <div>
                 <a href="aluno.html" class="border-2 border-cinza p-2 m-2">Sou aluno</a>
@@ -30,8 +35,9 @@
 
             <!--pesquisa-->
             <div class="border-2 border-cinza bg-white p-4">
-                <input type="text" placeholder="Busque por tema, área ou universidade" class="w-full border-2 border-cinza p-2 mb-2">
-                <button class="w-full bg-escuro text-white p-2">Buscar oportunidades</button>
+                <label for="busca-oportunidades" class="block font-bold mb-2">Buscar oportunidade</label>
+                <input id="busca-oportunidades" type="search" placeholder="Busque por palavra-chave" class="w-full border-2 border-cinza p-2 mb-2">
+                <a href="oportunidades.html" class="block w-full bg-escuro text-white p-2 text-center">Buscar</a>
             </div>
 
             <p class="text-gray-600 mt-4">Projetos de todo o Brasil</p>
