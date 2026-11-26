@@ -8,16 +8,19 @@
 </head>
 <body class="bg-fundo text-escuro min-h-screen flex flex-col">
     <!--navbar-->
-    <header>
-        <div class="border-b-2 border-cinza p-4">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="flex-1">
-                    <a href="index.html" class="font-bold text-xl">ConectaPesquisa</a>
-                </div>
-                <div class="mt-4 md:mt-0">
-                    <a href="aluno.html" class="border-2 border-cinza bg-white p-2 ml-2">Sou aluno</a>
-                    <a href="orientador.html" class="bg-escuro text-white p-2 ml-2">Sou orientador</a>
-                </div>
+ <header>
+        <div class="flex border-b-2 border-cinza p-4">
+            <div class="flex-1">
+                <a href="index.html" class="flex items-center gap-2 font-bold text-xl" aria-label="ConectaPesquisa - início">
+                    <span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-escuro" aria-hidden="true">
+                        <span class="h-2 w-2 rounded-full border border-escuro"></span>
+                    </span>
+                    ConectaPesquisa
+                </a>
+            </div>
+            <div>
+                <a href="aluno.html" class="border-2 border-cinza p-2 m-2">Sou aluno</a>
+                <a href="orientador.html" class="bg-escuro text-white p-2 m-2">Sou orientador</a>
             </div>
         </div>
     </header>
